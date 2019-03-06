@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+        <file>home.png</file>
+        <file>map.png</file>
+        <file>profile.png</file>
+        <file>search.png</file>
+        <file>settings.png</file>
+        <file>arrow.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE&libraries=drawing"></script>
+    <script type="text/javascript">
+
+        var map;
+
+        function initialize()
+        {
+            // Add map
+            var mapOptions =
+            {
+                center: new google.maps.LatLng(40.705311, -74.2581939),
+                zoom: 6
+            };
+
+            map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+
+			// Add event listener
+            google.maps.event.addListener(map, 'zoom_changed', function()
+            {
+                //alert(map.getZoom());
+            });
+			
+			// Add marker
+			var marker = new google.maps.Marker(
+            {
+                position: new google.maps.LatLng(40.705311, -74.2581939),
+                map: map,
+                title: "Marker A",
+            });
+            google.maps.event.addListener(marker, 'click', function()
+            {
+                map.panTo(marker.getPosition());
+            });
+            marker.setMap(map);
+
+            // Add polyline
+			var points = [ new google.maps.LatLng(39.8543, -73.2183), new google.maps.LatLng(41.705311, -75.2581939), new google.maps.LatLng(40.62388, -75.5483) ];
+            var polyOptions =
+            {
+				path: points,
+                strokeColor: '#FF0000',
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            };
+            historyPolyline = new google.maps.Polyline(polyOptions);
+            historyPolyline.setMap(map);
+			
+			// Add polygon
+			var points = [ new google.maps.LatLng(37.314166, -75.432), new google.maps.LatLng(40.2653, -74.4325), new google.maps.LatLng(38.8288, -76.5483) ];
+			var polygon = new google.maps.Polygon(
+            {
+                paths: points,
+                fillColor:  '#000000',
+                fillOpacity: 0.2,
+                strokeWeight: 3,
+                strokeColor: '#fff000',
+            });
+            polygon.setMap(map);
+
+            // Setup drawing manager
+            var drawingManager = new google.maps.drawing.DrawingManager();
+			drawingManager.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body ondragstart="return false">
+
+    <div id="map-canvas" />
+
+  </body>
+</html>

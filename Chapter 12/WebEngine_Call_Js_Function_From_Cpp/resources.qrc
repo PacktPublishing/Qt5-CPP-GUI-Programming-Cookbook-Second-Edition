@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/">
+        <file>html/test.html</file>
+        <file>html/css/bootstrap.css</file>
+        <file>html/css/bootstrap.css.map</file>
+        <file>html/css/bootstrap.min.css</file>
+        <file>html/css/bootstrap-theme.css</file>
+        <file>html/css/bootstrap-theme.css.map</file>
+        <file>html/css/bootstrap-theme.min.css</file>
+        <file>html/css/custom.css</file>
+        <file>html/css/font-awesome.css</file>
+        <file>html/css/font-awesome.min.css</file>
+        <file>html/fonts/FontAwesome.otf</file>
+        <file>html/fonts/fontawesome-webfont.eot</file>
+        <file>html/fonts/fontawesome-webfont.svg</file>
+        <file>html/fonts/fontawesome-webfont.ttf</file>
+        <file>html/fonts/fontawesome-webfont.woff</file>
+        <file>html/fonts/fontawesome-webfont.woff2</file>
+        <file>html/fonts/glyphicons-halflings-regular.eot</file>
+        <file>html/fonts/glyphicons-halflings-regular.svg</file>
+        <file>html/fonts/glyphicons-halflings-regular.ttf</file>
+        <file>html/fonts/glyphicons-halflings-regular.woff</file>
+        <file>html/fonts/glyphicons-halflings-regular.woff2</file>
+        <file>html/js/bootstrap.js</file>
+        <file>html/js/bootstrap.min.js</file>
+        <file>html/js/jquery.min.js</file>
+        <file>html/js/npm.js</file>
+        <file>html/tux.png</file>
+    </qresource>
+</RCC>

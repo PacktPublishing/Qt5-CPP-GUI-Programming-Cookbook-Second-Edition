@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>509</width>
+    <height>348</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton
+{
+	color: white;
+	background-color: #27a9e3;
+	border-width: 0px;
+	border-radius: 3px;
+}
+
+QPushButton:hover
+{
+	color: white;
+	background-color: #66c011;
+	border-width: 0px;
+	border-radius: 3px;
+}
+
+QPushButton:pressed
+{
+	color: white;
+	background-color: yellow;
+	border-width: 0px;
+	border-radius: 3px;
+}
+
+
+QPushButton[pagematches=true]
+{
+	color: white;
+	background-color: red;
+	border-width: 0px;
+	border-radius: 3px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="button1">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Page 1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="button2">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Page 2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="button3">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Page 3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab1">
+         <attribute name="title">
+          <string>Page 1</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tab2">
+         <attribute name="title">
+          <string>Page 2</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tab3">
+         <attribute name="title">
+          <string>Page 3</string>
+         </attribute>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

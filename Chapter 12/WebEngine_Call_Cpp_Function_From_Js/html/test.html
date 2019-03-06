@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	
+	<script>
+		$(document).ready(function()
+		{
+			new QWebChannel(qt.webChannelTransport, function(channel)
+			{
+				mainWindow = channel.objects.mainWindow;
+			});
+		
+			$("#login").click(function(e)
+			{
+				e.preventDefault();
+				
+				var user = $("#username").val();
+				var pass = $("#password").val();
+				mainWindow.showLoginInfo(user, pass);
+			});
+			
+			$("#changeText").click(function(e)
+			{
+				e.preventDefault();
+				
+				mainWindow.changeQtText("Good bye!");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<form id="example-form" action="#" class="container-fluid">
+			<div class="form-group">
+				<div class="col-md-12"><h3>Call C++ Function from Javascript</h3></div>
+				
+				<div class="col-md-12"><div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <span id="infotext">Click "Login" to send username and password variables to C++. Click "Change Cpp Text" to change the text label on Qt GUI.</span></div></div>
+				
+				<div class="col-md-12">
+					<label>Username:</label> <input id="username" type="text"><p />
+				</div>
+				
+				<div class="col-md-12">
+					<label>Password:</label> <input id="password" type="password"><p />
+				</div>
+				
+				<div class="col-md-12">
+					<button id="login" class="btn btn-success" type="button"><i class="fa fa-check"></i> Login</button> <button id="changeText" class="btn btn-primary" type="button"><i class="fa fa-pencil"></i> Change Cpp Text</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

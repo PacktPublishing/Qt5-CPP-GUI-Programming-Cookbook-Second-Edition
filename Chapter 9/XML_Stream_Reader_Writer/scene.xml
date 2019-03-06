@@ -1,0 +1,20 @@
+<scene>
+	<object tag="building">
+		<name>Library</name>
+		<position>120.0,0.0,50.68</position>
+		<rotation>0.0,0.0,0.0</rotation>
+		<scale>1.0,1.0,1.0</scale>
+	</object>
+	<object tag="building">
+		<name>Town Hall</name>
+		<position>80.2,0.0,20.5</position>
+		<rotation>0.0,0.0,0.0</rotation>
+		<scale>1.0,1.0,1.0</scale>
+	</object>
+	<object tag="prop">
+		<name>Tree</name>
+		<position>10.46,-0.2,80.2</position>
+		<rotation>0.0,0.0,0.0</rotation>
+		<scale>1.0,1.0,1.0</scale>
+	</object>
+</scene> 
