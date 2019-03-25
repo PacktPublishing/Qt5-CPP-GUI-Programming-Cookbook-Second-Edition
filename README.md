@@ -39,7 +39,7 @@ animation->start();
 **Following is what you need for this book:**
 This intermediate-level book is designed for those who want to develop software using Qt 5. If you want to improve the visual quality and content presentation of your software application, this book is for you. Prior experience of C++ programming is required.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-43478).
+With the following software and hardware list you can run all code files present in the book (Chapter 1-13).
 ### Software and Hardware List
 | Chapter     | Software required | OS required |
 | ----------- | ----------------- | ----------- |
