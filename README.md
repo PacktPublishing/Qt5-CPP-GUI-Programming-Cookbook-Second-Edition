@@ -1,6 +1,6 @@
 # Qt5 C++ GUI Programming Cookbook - Second Edition
 
-<a href="https://www.packtpub.com/application-development/qt5-c-gui-programming-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789803822 "><img src="https://d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/Mockup_B12577_MockupCover.png" alt="Qt5 C++ GUI Programming Cookbook - Second Edition" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/application-development/qt5-c-gui-programming-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789803822 "><img src="https://prod.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/b/1/b12577_pub.png" alt="Qt5 C++ GUI Programming Cookbook - Second Edition" height="256px" align="right"></a>
 
 This is the code repository for [Qt5 C++ GUI Programming Cookbook - Second Edition](https://www.packtpub.com/application-development/qt5-c-gui-programming-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789803822 ), published by Packt.
 
