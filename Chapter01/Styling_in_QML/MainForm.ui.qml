@@ -73,7 +73,6 @@ Rectangle {
         }
     }
 
-
     Text {
         id: dateTime
         color: "#ffffff"
@@ -131,6 +130,7 @@ Rectangle {
                 width: 15
                 color: "#ffffff"
                 radius: 5
+                z: -1
                 anchors.leftMargin: 0
                 anchors.fill: parent
             }
@@ -150,6 +150,7 @@ Rectangle {
                 width: 190
                 color: "#ffffff"
                 radius: 5
+                z: -1
                 anchors.leftMargin: 0
                 anchors.fill: parent
             }
@@ -193,7 +194,4 @@ Rectangle {
             source: "logo.png"
         }
     }
-
-
 }
-
