@@ -90,7 +90,8 @@ void RenderWindow::paintEvent(QPaintEvent *event)
 {
 	Q_UNUSED(event);
 
-	glViewport(0, 0, width(), height());
+    const qreal retinaScale = devicePixelRatio();
+    glViewport(0, 0, width() * retinaScale, height() * retinaScale);
 
 	glClearColor(0.39f, 0.58f, 0.93f, 1.f);
 	glClear(GL_COLOR_BUFFER_BIT);
