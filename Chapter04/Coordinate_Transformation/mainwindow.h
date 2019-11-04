@@ -21,6 +21,9 @@ public:
 
     virtual void paintEvent(QPaintEvent *event);
 
+public slots:
+    void updateWindow();
+
 private:
     Ui::MainWindow *ui;
 };

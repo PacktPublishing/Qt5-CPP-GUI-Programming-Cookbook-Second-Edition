@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QTimer* timer = new QTimer(this);
     timer->start(1000);
-    connect(timer, QTimer::timeout, this, MainWindow::update);
+    connect(timer, &QTimer::timeout, this, &MainWindow::updateWindow);
 }
 
 MainWindow::~MainWindow()
@@ -81,4 +81,9 @@ void MainWindow::paintEvent(QPaintEvent *event)
     painter.setBrush(Qt::black);
     painter.drawConvexPolygon(secondHand, 3);
     painter.restore();
+}
+
+void MainWindow::updateWindow()
+{
+    this->update();
 }
